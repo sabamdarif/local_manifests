@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-   <!-- Remote -->
-   <remote name="nashc-dev" fetch="ssh://git@github.com/nashc-dev" />
-   <remote name="killerpac" fetch="ssh://git@github.com/Killerpac" />
-   <remote name="elixir" fetch="ssh://git@github.com/ProjectElixir-Devices" />
+  <!-- Remote -->
+  <remote name="nashc-dev" fetch="https://github.com/nashc-dev" />
+  <remote name="github-lineage" fetch="https://github.com/LineageOS" />
+  <remote name="killerpac" fetch="https://github.com/Killerpac" />
 
-   <!-- Device Trees -->
-   <project path="device/realme/nashc" name="android_device_realme_nashc" revision="lineage-20" remote="killerpac" />
-   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" revision="lineage-20" remote="nashc-dev" />
+  <!-- Device Trees -->
+  <project path="device/realme/nashc" name="android_device_realme_nashc" revision="lineage-21" remote="killerpac" />
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" revision="lineage-21" remote="github-lineage" />
 
-   <!-- Kernel Source -->
-   <project path="kernel/realme/mt6785" name="android_kernel_realme_mt6785" revision="13.0-new" remote="nashc-dev" />
+  <!-- Kernel Source -->
+  <project path="kernel/realme/mt6785" name="android_kernel_realme_mt6785" revision="openela" remote="killerpac" />
 
-   <!-- Vendor Blobs -->
-   <project path="vendor/realme/nashc" name="android_vendor_realme_nashc" revision="lineage-20" remote="nashc-dev" />
+  <!-- Vendor Blobs -->
+  <project path="vendor/realme/nashc" name="android_vendor_realme_nashc" revision="master" remote="killerpac" />
 
-   <!-- Hardware Components -->
-   <project path="hardware/oplus" name="android_hardware_oplus" revision="elixir" remote="elixir" />
-   <project path="hardware/mediatek" name="android_hardware_mediatek" revision="lineage-20-rebase" remote="nashc-dev" />
+  <!-- Hardware Components -->
+  <project path="hardware/oplus" name="android_hardware_oplus" revision="lineage-21" remote="github-lineage" />
+  <project path="hardware/mediatek" name="android_hardware_mediatek" revision="lineage-21" remote="github-lineage" />
+  <project path="hardware/mediatek/gnss" name="oplus-ossi-development/android_hardware_mediatek_gnss" revision="lineage-21" />
 </manifest>
