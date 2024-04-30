@@ -2,8 +2,8 @@
 <manifest>
   <!-- Remote -->
   <remote name="github-lineage" fetch="https://github.com/LineageOS" />
-  <remote name="killerpac" fetch="https://github.com/Killerpac" />'
-  <remote name="ossi" fetch=https://github.com/oplus-ossi-development" />
+  <remote name="killerpac" fetch="https://github.com/Killerpac" />
+  <remote name="ossi" fetch="https://github.com/oplus-ossi-development" />
 
   <!-- Device Trees -->
   <project path="device/realme/nashc" name="android_device_realme_nashc" revision="lineage-21" remote="killerpac" />
