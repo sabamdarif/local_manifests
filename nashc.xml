@@ -2,7 +2,7 @@
 <manifest>
   <!-- Remote -->
   <remote name="github-lineage" fetch="https://github.com/LineageOS" />
-  <remote name="killerpac" fetch="https://github.com/Killerpac" />
+  <remote name="sabamdarif" fetch="https://github.com/sabamdarif" />
   <remote name="ossi" fetch="https://github.com/oplus-ossi-development" />
 
   <!-- Device Trees -->
